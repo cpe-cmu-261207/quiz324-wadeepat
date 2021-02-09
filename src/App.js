@@ -24,10 +24,9 @@ function App() {
       <div className="card-content">
         <p className="is-4 title has-text-centered">Add Pet</p>
         <div className="field">
-          <label id="name" className="label">
-            Name
-          </label>
+          <label className="label">Name</label>
           <input
+            id="name"
             className="input"
             type="text"
             placeholder="e.q Coco"
@@ -41,6 +40,7 @@ function App() {
         <div className="field">
           <label className="label">Gender</label>
           <select
+            id="gender-box"
             className="input"
             type="text"
             placeholder="Please select .."
@@ -59,6 +59,7 @@ function App() {
         <div className="field">
           <label className="label">Age</label>
           <input
+            id="age-box"
             className="input"
             type="number"
             placeholder="e.q 5"
@@ -74,6 +75,8 @@ function App() {
             setitems(newitem);
             // recalculate GPA
             document.querySelector("#name").value = "";
+            document.querySelector("#age-box").value = "";
+            document.querySelector("#gender-box").value = "";
           }}
           className="button is-danger is-fullwidth"
         >
