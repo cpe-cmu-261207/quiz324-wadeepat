@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    //add item to localStorage when courses change
+    //add item to localStorage when item change
     localStorage.setItem("items", JSON.stringify(item));
   }, [item]);
 
